@@ -20,7 +20,7 @@ public class Main{
             String str = Integer.toString(i);
             boolean isAvail = true;
             for(int j = 0 ; j < str.length() ; j++){
-                if(flag[Integer.parseInt(Character.toString(str.charAt(j)))]){
+                if(flag[str.charAt(j) - '0']){
                     isAvail = false;
                     break;
                 }
